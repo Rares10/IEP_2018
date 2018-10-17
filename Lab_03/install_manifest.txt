@@ -1,0 +1,3 @@
+/home/raresgligor/Desktop/IEP_2018/app_project/_install/bin/myapp
+/home/raresgligor/Desktop/IEP_2018/app_project/_install/lib/libmyLibrary.a
+/home/raresgligor/Desktop/IEP_2018/app_project/_install/include/myLibrary.h

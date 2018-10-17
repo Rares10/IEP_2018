@@ -1,0 +1,7 @@
+/home/raresgligor/Desktop/IEP_2018/app_project/libtest_project/CMakeFiles/install/strip.dir
+/home/raresgligor/Desktop/IEP_2018/app_project/libtest_project/CMakeFiles/edit_cache.dir
+/home/raresgligor/Desktop/IEP_2018/app_project/libtest_project/CMakeFiles/rebuild_cache.dir
+/home/raresgligor/Desktop/IEP_2018/app_project/libtest_project/CMakeFiles/list_install_components.dir
+/home/raresgligor/Desktop/IEP_2018/app_project/libtest_project/CMakeFiles/install/local.dir
+/home/raresgligor/Desktop/IEP_2018/app_project/libtest_project/CMakeFiles/myLibrary.dir
+/home/raresgligor/Desktop/IEP_2018/app_project/libtest_project/CMakeFiles/install.dir

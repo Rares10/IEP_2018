@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
 {
-	printf("Hello\n");
+	printf("I am a library\n");
 	return 0;
 }
