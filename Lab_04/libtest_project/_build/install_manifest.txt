@@ -1,0 +1,2 @@
+/usr/local/lib/libmyLibrary.a
+/usr/local/include/myLibrary.h

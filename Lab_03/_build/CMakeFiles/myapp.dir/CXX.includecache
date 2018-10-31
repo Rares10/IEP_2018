@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raresgligor/Desktop/IEP_2018/Lab_03/libtest_project/myLibrary.h
+iostream
+-
+
+/home/raresgligor/Desktop/IEP_2018/Lab_03/main.cpp
+iostream
+-
+main.h
+/home/raresgligor/Desktop/IEP_2018/Lab_03/main.h
+
+/home/raresgligor/Desktop/IEP_2018/Lab_03/main.h
+iostream
+-
+libtest_project/myLibrary.h
+/home/raresgligor/Desktop/IEP_2018/Lab_03/libtest_project/myLibrary.h
+

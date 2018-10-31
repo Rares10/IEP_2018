@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raresgligor/Desktop/IEP_2018/app_project
+CMAKE_SOURCE_DIR = /home/raresgligor/Desktop/IEP_2018/Lab_03
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raresgligor/Desktop/IEP_2018/app_project/_build
+CMAKE_BINARY_DIR = /home/raresgligor/Desktop/IEP_2018/Lab_03/_build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/app_project/_build/CMakeFiles /home/raresgligor/Desktop/IEP_2018/app_project/_build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles /home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/app_project/_build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -169,32 +169,45 @@ myapp/fast:
 	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/build
 .PHONY : myapp/fast
 
-main.o: main.c.o
+#=============================================================================
+# Target rules for targets named myLibrary
+
+# Build rule for target.
+myLibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 myLibrary
+.PHONY : myLibrary
+
+# fast build rule for target.
+myLibrary/fast:
+	$(MAKE) -f libtest_project/CMakeFiles/myLibrary.dir/build.make libtest_project/CMakeFiles/myLibrary.dir/build
+.PHONY : myLibrary/fast
+
+main.o: main.cpp.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.c.o
-.PHONY : main.c.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main.i: main.c.i
+main.i: main.cpp.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.c.i
-.PHONY : main.c.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.c.s
+main.s: main.cpp.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.c.s
-.PHONY : main.c.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -209,6 +222,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... install/local"
 	@echo "... install"
+	@echo "... myLibrary"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

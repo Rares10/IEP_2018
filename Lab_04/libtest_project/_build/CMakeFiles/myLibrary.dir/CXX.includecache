@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/raresgligor/Desktop/IEP_2018/Lab_04/libtest_project/myLibrary.cpp
+stdio.h
+-
+myLibrary.h
+/home/raresgligor/Desktop/IEP_2018/Lab_04/libtest_project/myLibrary.h
+
+/home/raresgligor/Desktop/IEP_2018/Lab_04/libtest_project/myLibrary.h
+iostream
+-
+

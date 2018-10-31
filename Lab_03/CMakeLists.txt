@@ -4,7 +4,7 @@ project(myapp)
 
 add_subdirectory(libtest_project)
 
-add_executable(myapp main.c)
+add_executable(myapp main.cpp)
 
 target_link_libraries(myapp myLibrary)
 

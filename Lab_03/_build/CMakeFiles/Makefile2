@@ -54,19 +54,19 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/raresgligor/Desktop/IEP_2018/app_project
+CMAKE_SOURCE_DIR = /home/raresgligor/Desktop/IEP_2018/Lab_03
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/raresgligor/Desktop/IEP_2018/app_project/_build
+CMAKE_BINARY_DIR = /home/raresgligor/Desktop/IEP_2018/Lab_03/_build
 
 #=============================================================================
 # Target rules for target CMakeFiles/myapp.dir
 
 # All Build rule for target.
-CMakeFiles/myapp.dir/all:
+CMakeFiles/myapp.dir/all: libtest_project/CMakeFiles/myLibrary.dir/all
 	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/depend
 	$(MAKE) -f CMakeFiles/myapp.dir/build.make CMakeFiles/myapp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raresgligor/Desktop/IEP_2018/app_project/_build/CMakeFiles --progress-num=1,2 "Built target myapp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles --progress-num=3,4 "Built target myapp"
 .PHONY : CMakeFiles/myapp.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/myapp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/myapp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/app_project/_build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/myapp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/app_project/_build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles 0
 .PHONY : CMakeFiles/myapp.dir/rule
 
 # Convenience name for target.
@@ -93,6 +93,61 @@ CMakeFiles/myapp.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/myapp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory libtest_project
+
+# Convenience name for "all" pass in the directory.
+libtest_project/all: libtest_project/CMakeFiles/myLibrary.dir/all
+
+.PHONY : libtest_project/all
+
+# Convenience name for "clean" pass in the directory.
+libtest_project/clean: libtest_project/CMakeFiles/myLibrary.dir/clean
+
+.PHONY : libtest_project/clean
+
+# Convenience name for "preinstall" pass in the directory.
+libtest_project/preinstall:
+
+.PHONY : libtest_project/preinstall
+
+#=============================================================================
+# Target rules for target libtest_project/CMakeFiles/myLibrary.dir
+
+# All Build rule for target.
+libtest_project/CMakeFiles/myLibrary.dir/all:
+	$(MAKE) -f libtest_project/CMakeFiles/myLibrary.dir/build.make libtest_project/CMakeFiles/myLibrary.dir/depend
+	$(MAKE) -f libtest_project/CMakeFiles/myLibrary.dir/build.make libtest_project/CMakeFiles/myLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles --progress-num=1,2 "Built target myLibrary"
+.PHONY : libtest_project/CMakeFiles/myLibrary.dir/all
+
+# Include target in all.
+all: libtest_project/CMakeFiles/myLibrary.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+libtest_project/CMakeFiles/myLibrary.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 libtest_project/CMakeFiles/myLibrary.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/raresgligor/Desktop/IEP_2018/Lab_03/_build/CMakeFiles 0
+.PHONY : libtest_project/CMakeFiles/myLibrary.dir/rule
+
+# Convenience name for target.
+myLibrary: libtest_project/CMakeFiles/myLibrary.dir/rule
+
+.PHONY : myLibrary
+
+# clean rule for target.
+libtest_project/CMakeFiles/myLibrary.dir/clean:
+	$(MAKE) -f libtest_project/CMakeFiles/myLibrary.dir/build.make libtest_project/CMakeFiles/myLibrary.dir/clean
+.PHONY : libtest_project/CMakeFiles/myLibrary.dir/clean
+
+# clean rule for target.
+clean: libtest_project/CMakeFiles/myLibrary.dir/clean
 
 .PHONY : clean
 
